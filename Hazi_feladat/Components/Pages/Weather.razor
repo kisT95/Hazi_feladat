@@ -1,25 +1,25 @@
 ﻿@page "/weather"
 @attribute [StreamRendering]
 
-<PageTitle>Weather</PageTitle>
+<PageTitle>Időjárás</PageTitle>
 
-<h1>Weather</h1>
+<h1>Időjárás</h1>
 
-<p>This component demonstrates showing data.</p>
+<p>Ez a komponens az adatok megjelenítését mutatja be.</p>
 
 @if (forecasts == null)
 {
-    <p><em>Loading...</em></p>
+    <p><em>Betöltés...</em></p>
 }
 else
 {
     <table class="table">
         <thead>
             <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
+                <th>Dátum</th>
+                <th>Hőmérs. (C)</th>
+                <th>Hőmérs. (F)</th>
+                <th>Összegzés</th>
             </tr>
         </thead>
         <tbody>
